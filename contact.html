@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+<body>
+
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+
+    <main>
+        <form action="#" method="POST">
+            <!-- 1. Text input -->
+            <div class="form-group">
+                <label for="fullName">Full Name (Text):</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+
+            <!-- 2. Email input -->
+            <div class="form-group">
+                <label for="email">Email Address (Email):</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <!-- 3. Number input -->
+            <div class="form-group">
+                <label for="age">Age (Number):</label>
+                <input type="number" id="age" name="age" min="10" max="100">
+            </div>
+
+            <!-- 4. Date input -->
+            <div class="form-group">
+                <label for="appointmentDate">Preferred Date (Date):</label>
+                <input type="date" id="appointmentDate" name="appointmentDate">
+            </div>
+
+            <!-- 5. Radio buttons -->
+            <fieldset>
+                <legend>Gender (Radio):</legend>
+                <div class="inline-group">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
+            </fieldset>
+
+            <!-- 6. Dropdown menu (Select) -->
+            <div class="form-group">
+                <label for="service">Service Needed (Select):</label>
+                <select id="service" name="service">
+                    <option value="web">Web Development</option>
+                    <option value="design">Graphic Design</option>
+                    <option value="marketing">Digital Marketing</option>
+                </select>
+            </div>
+
+            <!-- 7. Checkboxes -->
+            <fieldset>
+                <legend>Interests (Checkbox):</legend>
+                <div class="inline-group">
+                    <input type="checkbox" id="coding" name="interests" value="coding">
+                    <label for="coding">Coding</label>
+
+                    <input type="checkbox" id="reading" name="interests" value="reading">
+                    <label for="reading">Reading</label>
+                </div>
+            </fieldset>
+
+            <!-- 8. Large text box (Textarea) -->
+            <div class="form-group">
+                <label for="message">Your Message (Textarea):</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here..."></textarea>
+            </div>
+
+            <!-- زر الإرسال -->
+            <button type="submit">Submit Form</button>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Website. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
